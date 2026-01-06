@@ -46,14 +46,21 @@
       .sig-logo {
         width: 90px;
         height: 90px;
-        background: #2a2a2a;
+        background: transparent;
         border-radius: 6px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         font-size: 12px;
         color: #bdbdbd;
         flex: 0 0 90px;
+      }
+
+      .sig-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
       }
 
       .sig-card {
@@ -90,11 +97,11 @@
         width: 100%;
         max-width: 820px;
         height: 74px;
-        background: #2a2a2a;
+        background: transparent;
         border-radius: 8px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         color: #bdbdbd;
         font-size: 14px;
         margin: 14px 0;
@@ -184,7 +191,16 @@
         <div class="signature">
           <!-- LOGO PLACEHOLDER: replace src with your logo URL -->
           <div class="sig-logo">
-            <span>LOGO<br />PLACEHOLDER</span>
+            <a
+              href="https://www.consumerdirect.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                alt="“CD_logo”"
+                src="https://raw.githubusercontent.com/longla-cd/public-assets/main/LOGO.png"
+              />
+            </a>
           </div>
 
           <div class="sig-card">
@@ -215,7 +231,19 @@
           <!-- Option A: Use an img tag (recommended) -->
           <!-- <img src="https://your-image-url-here.com/banner1.png" alt="We have moved" /> -->
           <!-- Option B: Leave as placeholder text -->
-          <span>BANNER IMAGE PLACEHOLDER (Replace with your URL)</span>
+          <img
+            style="
+              width: 450px;
+              height: 60px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              cursor: pointer;
+              min-height: auto;
+              min-width: auto;
+            "
+            src="https://raw.githubusercontent.com/longla-cd/public-assets/main/BANNER1.png"
+            alt="“banner_link”"
+          />
         </div>
 
         <!-- BANNER 2 PLACEHOLDER: replace src with your banner image URL -->
@@ -231,6 +259,7 @@
               min-height: auto;
               min-width: auto;
             "
+            src="https://raw.githubusercontent.com/longla-cd/public-assets/main/BANNER2.png"
             alt="“banner_link”"
           />
         </div>
